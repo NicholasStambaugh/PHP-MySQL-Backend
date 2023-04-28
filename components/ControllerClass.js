@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-function BackendData() {
+function ControllerClass() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/config')
+    fetch('/class/controller.class.php')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
 
   return (
     <div>
-      <h2>Backend Data</h2>
+      <h2>Controller Class</h2>
       <ul>
         {data.map(item => (
           <li key={item.id}>{item.name}</li>
@@ -21,4 +21,4 @@ function BackendData() {
   );
 }
 
-export default BackendData;
+export default ControllerClass;

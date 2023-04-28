@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-function BackendData() {
+function DatabaseConfig() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/config')
+    fetch('/database')
       .then(response => response.json())
       .then(data => setData(data));
   }, []);
 
   return (
     <div>
-      <h2>Backend Data</h2>
+      <h2>Database Config</h2>
       <ul>
         {data.map(item => (
           <li key={item.id}>{item.name}</li>
@@ -21,4 +21,4 @@ function BackendData() {
   );
 }
 
-export default BackendData;
+export default DatabaseConfig;
