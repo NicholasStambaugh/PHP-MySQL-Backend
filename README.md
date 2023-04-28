@@ -6,9 +6,24 @@ This is a PHP application that connects to a MySQL database and provides functio
 
 To install this application, you will need to have PHP and MySQL installed on your system. You will also need to create a new database and update the configuration file with your database credentials.
 
-1. Clone this repository to your local machine.
-2. Create a new MySQL database for the application.
-3. Update the config.php file with your database credentials.
+1. Clone this repository to your local machine using the command git clone https://github.com/NicholasStambaugh/PHP-MySQL-Backend.git.
+2. Create a new MySQL database for the application using a tool like phpMyAdmin or the MySQL command line interface. You can use the following command to create a new database:
+
+```
+CREATE DATABASE dbname;
+```
+Replace dbname with the name of your database.
+
+3. Update the config.php file in the root directory of the application with your database credentials. You will need to update the following lines:
+
+```
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'dbname');
+define('DB_USER', 'dbuser');
+define('DB_PASS', 'dbpass');
+```
+Replace dbname with the name of your database, dbuser with your MySQL username, and dbpass with your MySQL password.
+
 4. Run the following command to create the necessary database tables:
 
 ```
