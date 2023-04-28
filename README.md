@@ -2,6 +2,18 @@
 
 This is a PHP application that connects to a MySQL database and provides functionality for managing users, posts, and comments.
 
+## App.js
+
+This file serves as the entry point for the React application and is responsible for rendering the entire user interface. It is exported as the default component of the file.
+
+## index.js
+
+The index.js file serves as the entry point for the React application. It imports the necessary components and renders them to the DOM using ReactDOM.render().
+
+## Components
+
+The components folder contains React components that are used to build the user interface of the application. Each component is responsible for rendering a specific part of the UI.
+
 ## Installation
 
 To install this application, you will need to have PHP and MySQL installed on your system. You will also need to create a new database and update the configuration file with your database credentials.
